@@ -23,6 +23,14 @@
 		CC1E5305170B43760051FBCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E52E0170B43760051FBCE /* Foundation.framework */; };
 		CC1E530D170B43760051FBCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC1E530B170B43760051FBCE /* InfoPlist.strings */; };
 		CC1E5310170B43760051FBCE /* NTBELabsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1E530F170B43760051FBCE /* NTBELabsTests.m */; };
+		CC325700172E92E5005F593C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3256FF172E92E5005F593C /* libsqlite3.dylib */; };
+		CC325753172ED4E5005F593C /* AppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CC32573F172ED4E5005F593C /* AppUtil.m */; };
+		CC325754172ED4E5005F593C /* SQLiteFMDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CC325742172ED4E5005F593C /* SQLiteFMDBHelper.m */; };
+		CC325755172ED4E5005F593C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CC325747172ED4E5005F593C /* FMDatabase.m */; };
+		CC325756172ED4E5005F593C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC325749172ED4E5005F593C /* FMDatabaseAdditions.m */; };
+		CC325757172ED4E5005F593C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC32574B172ED4E5005F593C /* FMDatabasePool.m */; };
+		CC325758172ED4E5005F593C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC32574D172ED4E5005F593C /* FMDatabaseQueue.m */; };
+		CC325759172ED4E5005F593C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CC32574F172ED4E5005F593C /* FMResultSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +66,23 @@
 		CC1E530C170B43760051FBCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC1E530E170B43760051FBCE /* NTBELabsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTBELabsTests.h; sourceTree = "<group>"; };
 		CC1E530F170B43760051FBCE /* NTBELabsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTBELabsTests.m; sourceTree = "<group>"; };
+		CC3256FF172E92E5005F593C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CC32573E172ED4E5005F593C /* AppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtil.h; sourceTree = "<group>"; };
+		CC32573F172ED4E5005F593C /* AppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtil.m; sourceTree = "<group>"; };
+		CC325740172ED4E5005F593C /* MacroUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroUtils.h; sourceTree = "<group>"; };
+		CC325741172ED4E5005F593C /* SQLiteFMDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteFMDBHelper.h; sourceTree = "<group>"; };
+		CC325742172ED4E5005F593C /* SQLiteFMDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteFMDBHelper.m; sourceTree = "<group>"; };
+		CC325743172ED4E5005F593C /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		CC325746172ED4E5005F593C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		CC325747172ED4E5005F593C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		CC325748172ED4E5005F593C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		CC325749172ED4E5005F593C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		CC32574A172ED4E5005F593C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		CC32574B172ED4E5005F593C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		CC32574C172ED4E5005F593C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		CC32574D172ED4E5005F593C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		CC32574E172ED4E5005F593C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		CC32574F172ED4E5005F593C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC325700172E92E5005F593C /* libsqlite3.dylib in Frameworks */,
 				CC1E52DF170B43760051FBCE /* UIKit.framework in Frameworks */,
 				CC1E52E1170B43760051FBCE /* Foundation.framework in Frameworks */,
 				CC1E52E3170B43760051FBCE /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +132,7 @@
 		CC1E52DD170B43760051FBCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC3256FF172E92E5005F593C /* libsqlite3.dylib */,
 				CC1E52DE170B43760051FBCE /* UIKit.framework */,
 				CC1E52E0170B43760051FBCE /* Foundation.framework */,
 				CC1E52E2170B43760051FBCE /* CoreGraphics.framework */,
@@ -117,6 +144,11 @@
 		CC1E52E4170B43760051FBCE /* NTBELabs */ = {
 			isa = PBXGroup;
 			children = (
+				CC32573D172ED4E5005F593C /* util */,
+				CC325744172ED4E5005F593C /* Vendor */,
+				CC325750172ED4E5005F593C /* ViewControllers */,
+				CC325752172ED4E5005F593C /* Views */,
+				CC32573C172ED417005F593C /* SampleCode */,
 				CC1E52ED170B43760051FBCE /* SMHC_AppDelegate.h */,
 				CC1E52EE170B43760051FBCE /* SMHC_AppDelegate.m */,
 				CC1E52F6170B43760051FBCE /* MainStoryboard.storyboard */,
@@ -130,6 +162,7 @@
 		CC1E52E5170B43760051FBCE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC32571E172EAE8C005F593C /* images */,
 				CC1E52E6170B43760051FBCE /* NTBELabs-Info.plist */,
 				CC1E52E7170B43760051FBCE /* InfoPlist.strings */,
 				CC1E52EA170B43760051FBCE /* main.m */,
@@ -158,6 +191,81 @@
 				CC1E530B170B43760051FBCE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC32571E172EAE8C005F593C /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = images;
+			path = "Supporting Files/images";
+			sourceTree = "<group>";
+		};
+		CC32573C172ED417005F593C /* SampleCode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SampleCode;
+			sourceTree = "<group>";
+		};
+		CC32573D172ED4E5005F593C /* util */ = {
+			isa = PBXGroup;
+			children = (
+				CC32573E172ED4E5005F593C /* AppUtil.h */,
+				CC32573F172ED4E5005F593C /* AppUtil.m */,
+				CC325740172ED4E5005F593C /* MacroUtils.h */,
+				CC325741172ED4E5005F593C /* SQLiteFMDBHelper.h */,
+				CC325742172ED4E5005F593C /* SQLiteFMDBHelper.m */,
+				CC325743172ED4E5005F593C /* SynthesizeSingleton.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		CC325744172ED4E5005F593C /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				CC325745172ED4E5005F593C /* FMDB */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		CC325745172ED4E5005F593C /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				CC325746172ED4E5005F593C /* FMDatabase.h */,
+				CC325747172ED4E5005F593C /* FMDatabase.m */,
+				CC325748172ED4E5005F593C /* FMDatabaseAdditions.h */,
+				CC325749172ED4E5005F593C /* FMDatabaseAdditions.m */,
+				CC32574A172ED4E5005F593C /* FMDatabasePool.h */,
+				CC32574B172ED4E5005F593C /* FMDatabasePool.m */,
+				CC32574C172ED4E5005F593C /* FMDatabaseQueue.h */,
+				CC32574D172ED4E5005F593C /* FMDatabaseQueue.m */,
+				CC32574E172ED4E5005F593C /* FMResultSet.h */,
+				CC32574F172ED4E5005F593C /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		CC325750172ED4E5005F593C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC325751172ED4E5005F593C /* Modal */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CC325751172ED4E5005F593C /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		CC325752172ED4E5005F593C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +382,13 @@
 				CC1E52EB170B43760051FBCE /* main.m in Sources */,
 				CC1E52EF170B43760051FBCE /* SMHC_AppDelegate.m in Sources */,
 				CC1E52FB170B43760051FBCE /* SMHC_ViewController.m in Sources */,
+				CC325753172ED4E5005F593C /* AppUtil.m in Sources */,
+				CC325754172ED4E5005F593C /* SQLiteFMDBHelper.m in Sources */,
+				CC325755172ED4E5005F593C /* FMDatabase.m in Sources */,
+				CC325756172ED4E5005F593C /* FMDatabaseAdditions.m in Sources */,
+				CC325757172ED4E5005F593C /* FMDatabasePool.m in Sources */,
+				CC325758172ED4E5005F593C /* FMDatabaseQueue.m in Sources */,
+				CC325759172ED4E5005F593C /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +463,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -373,7 +488,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -387,6 +502,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NTBELabs/NTBELabs-Prefix.pch";
 				INFOPLIST_FILE = "NTBELabs/NTBELabs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -398,6 +514,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NTBELabs/NTBELabs-Prefix.pch";
 				INFOPLIST_FILE = "NTBELabs/NTBELabs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +573,7 @@
 				CC1E5315170B43760051FBCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC1E5316170B43760051FBCE /* Build configuration list for PBXNativeTarget "NTBELabsTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +582,7 @@
 				CC1E5318170B43760051FBCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
