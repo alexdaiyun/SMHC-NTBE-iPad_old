@@ -5,6 +5,8 @@ NTBE for iPad App
 
 中国老年心理问题评估与测试 Neuropsychological Test Battery for Elderly (NTBE)
 
+上海交通大学医学院附属精神卫生中心委托开发。
+
 
 功能模块：
 1、受试者资料档案建立及管理
