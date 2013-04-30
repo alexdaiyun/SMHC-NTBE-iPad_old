@@ -31,6 +31,7 @@
 		CC325758172ED4E5005F593C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC32574D172ED4E5005F593C /* FMDatabaseQueue.m */; };
 		CC325759172ED4E5005F593C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CC32574F172ED4E5005F593C /* FMResultSet.m */; };
 		CC32575C172FBA35005F593C /* SMHC_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC32575B172FBA35005F593C /* SMHC_ViewController.m */; };
+		CC32575E172FE398005F593C /* NTBELabsData.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CC32575D172FE398005F593C /* NTBELabsData.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		CC32574F172ED4E5005F593C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		CC32575A172FBA35005F593C /* SMHC_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMHC_ViewController.h; sourceTree = "<group>"; };
 		CC32575B172FBA35005F593C /* SMHC_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMHC_ViewController.m; sourceTree = "<group>"; };
+		CC32575D172FE398005F593C /* NTBELabsData.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = NTBELabsData.sqlite; path = "Supporting Files/NTBELabsData.sqlite"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		CC1E52E4170B43760051FBCE /* NTBELabs */ = {
 			isa = PBXGroup;
 			children = (
+				CC32575F172FF21A005F593C /* Model */,
 				CC32573D172ED4E5005F593C /* util */,
 				CC325744172ED4E5005F593C /* Vendor */,
 				CC325750172ED4E5005F593C /* ViewControllers */,
@@ -160,6 +163,7 @@
 		CC1E52E5170B43760051FBCE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC32575D172FE398005F593C /* NTBELabsData.sqlite */,
 				CC32571E172EAE8C005F593C /* images */,
 				CC1E52E6170B43760051FBCE /* NTBELabs-Info.plist */,
 				CC1E52E7170B43760051FBCE /* InfoPlist.strings */,
@@ -249,16 +253,8 @@
 		CC325750172ED4E5005F593C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CC325751172ED4E5005F593C /* Modal */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		CC325751172ED4E5005F593C /* Modal */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Modal;
 			sourceTree = "<group>";
 		};
 		CC325752172ED4E5005F593C /* Views */ = {
@@ -266,6 +262,13 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CC32575F172FF21A005F593C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +348,7 @@
 				CC1E52F3170B43760051FBCE /* Default@2x.png in Resources */,
 				CC1E52F5170B43760051FBCE /* Default-568h@2x.png in Resources */,
 				CC1E52F8170B43760051FBCE /* MainStoryboard.storyboard in Resources */,
+				CC32575E172FE398005F593C /* NTBELabsData.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,8 +389,8 @@
 				CC325754172ED4E5005F593C /* SQLiteFMDBHelper.m in Sources */,
 				CC325755172ED4E5005F593C /* FMDatabase.m in Sources */,
 				CC325756172ED4E5005F593C /* FMDatabaseAdditions.m in Sources */,
-				CC325757172ED4E5005F593C /* FMDatabasePool.m in Sources */,
 				CC325758172ED4E5005F593C /* FMDatabaseQueue.m in Sources */,
+				CC325757172ED4E5005F593C /* FMDatabasePool.m in Sources */,
 				CC325759172ED4E5005F593C /* FMResultSet.m in Sources */,
 				CC32575C172FBA35005F593C /* SMHC_ViewController.m in Sources */,
 			);

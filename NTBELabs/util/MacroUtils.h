@@ -14,9 +14,11 @@
 
 
 
-#define AppDBName                           @"SampleData.sqlite"
+#define AppDBName                           @"NTBELabsData.sqlite"
 
-#define LabsOrgName         @"FMDB Sample"
+#define LabsOrgName                         @"NTBELabs"
+
+#define AppHandleOpenURL                    @"NTBELabs"
 
 #define kLeftMargin				20.0
 #define kTopMargin				20.0
@@ -25,11 +27,11 @@
 
 #define kTextFieldHeight		30.0
 
-#define masterWidth 224.0f
-#define kSplitWidth 1.0f
+#define masterWidth             224.0f
+#define kSplitWidth             1.0f
 
 
-#define EMPTY_STRING            @""
+#define EMPTY_STRING                        @""
 
 
 #pragma mark - AppStroe
@@ -125,7 +127,7 @@ CGRectGetMinY(a) + floorf( ( ABS( CGRectGetHeight( a ) - CGRectGetHeight( b ) ) 
 
 
 
-#pragma mark - Log
+#pragma mark - Debug Log
 
 #if NEED_OUTPUT_LOG
 
