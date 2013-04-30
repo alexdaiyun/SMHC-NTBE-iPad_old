@@ -17,7 +17,6 @@
 		CC1E52F3170B43760051FBCE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC1E52F2170B43760051FBCE /* Default@2x.png */; };
 		CC1E52F5170B43760051FBCE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC1E52F4170B43760051FBCE /* Default-568h@2x.png */; };
 		CC1E52F8170B43760051FBCE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1E52F6170B43760051FBCE /* MainStoryboard.storyboard */; };
-		CC1E52FB170B43760051FBCE /* SMHC_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1E52FA170B43760051FBCE /* SMHC_ViewController.m */; };
 		CC1E5303170B43760051FBCE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E5302170B43760051FBCE /* SenTestingKit.framework */; };
 		CC1E5304170B43760051FBCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E52DE170B43760051FBCE /* UIKit.framework */; };
 		CC1E5305170B43760051FBCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E52E0170B43760051FBCE /* Foundation.framework */; };
@@ -31,6 +30,7 @@
 		CC325757172ED4E5005F593C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC32574B172ED4E5005F593C /* FMDatabasePool.m */; };
 		CC325758172ED4E5005F593C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC32574D172ED4E5005F593C /* FMDatabaseQueue.m */; };
 		CC325759172ED4E5005F593C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CC32574F172ED4E5005F593C /* FMResultSet.m */; };
+		CC32575C172FBA35005F593C /* SMHC_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC32575B172FBA35005F593C /* SMHC_ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +58,6 @@
 		CC1E52F2170B43760051FBCE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CC1E52F4170B43760051FBCE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CC1E52F7170B43760051FBCE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CC1E52F9170B43760051FBCE /* SMHC_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMHC_ViewController.h; sourceTree = "<group>"; };
-		CC1E52FA170B43760051FBCE /* SMHC_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMHC_ViewController.m; sourceTree = "<group>"; };
 		CC1E5301170B43760051FBCE /* NTBELabsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTBELabsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1E5302170B43760051FBCE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CC1E530A170B43760051FBCE /* NTBELabsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NTBELabsTests-Info.plist"; sourceTree = "<group>"; };
@@ -83,6 +81,8 @@
 		CC32574D172ED4E5005F593C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		CC32574E172ED4E5005F593C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		CC32574F172ED4E5005F593C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		CC32575A172FBA35005F593C /* SMHC_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMHC_ViewController.h; sourceTree = "<group>"; };
+		CC32575B172FBA35005F593C /* SMHC_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMHC_ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +152,6 @@
 				CC1E52ED170B43760051FBCE /* SMHC_AppDelegate.h */,
 				CC1E52EE170B43760051FBCE /* SMHC_AppDelegate.m */,
 				CC1E52F6170B43760051FBCE /* MainStoryboard.storyboard */,
-				CC1E52F9170B43760051FBCE /* SMHC_ViewController.h */,
-				CC1E52FA170B43760051FBCE /* SMHC_ViewController.m */,
 				CC1E52E5170B43760051FBCE /* Supporting Files */,
 			);
 			path = NTBELabs;
@@ -204,6 +202,8 @@
 		CC32573C172ED417005F593C /* SampleCode */ = {
 			isa = PBXGroup;
 			children = (
+				CC32575A172FBA35005F593C /* SMHC_ViewController.h */,
+				CC32575B172FBA35005F593C /* SMHC_ViewController.m */,
 			);
 			path = SampleCode;
 			sourceTree = "<group>";
@@ -381,7 +381,6 @@
 			files = (
 				CC1E52EB170B43760051FBCE /* main.m in Sources */,
 				CC1E52EF170B43760051FBCE /* SMHC_AppDelegate.m in Sources */,
-				CC1E52FB170B43760051FBCE /* SMHC_ViewController.m in Sources */,
 				CC325753172ED4E5005F593C /* AppUtil.m in Sources */,
 				CC325754172ED4E5005F593C /* SQLiteFMDBHelper.m in Sources */,
 				CC325755172ED4E5005F593C /* FMDatabase.m in Sources */,
@@ -389,6 +388,7 @@
 				CC325757172ED4E5005F593C /* FMDatabasePool.m in Sources */,
 				CC325758172ED4E5005F593C /* FMDatabaseQueue.m in Sources */,
 				CC325759172ED4E5005F593C /* FMResultSet.m in Sources */,
+				CC32575C172FBA35005F593C /* SMHC_ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
