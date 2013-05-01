@@ -7,7 +7,7 @@
 //
 
 #import "SMHC_AppDelegate.h"
-#import "AppUtil.h"
+
 
 @implementation SMHC_AppDelegate
 

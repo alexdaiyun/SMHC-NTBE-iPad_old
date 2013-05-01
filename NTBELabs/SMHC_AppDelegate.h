@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppUtil.h"
 
 @interface SMHC_AppDelegate : UIResponder <UIApplicationDelegate>
 
