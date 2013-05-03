@@ -34,6 +34,8 @@
 		CC32575E172FE398005F593C /* NTBELabsData.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CC32575D172FE398005F593C /* NTBELabsData.sqlite */; };
 		CC3257651730B944005F593C /* SubjectsBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3257641730B944005F593C /* SubjectsBLL.m */; };
 		CC3257681730B96F005F593C /* Subjects.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3257671730B96F005F593C /* Subjects.m */; };
+		CC7D3F4117334ABD00437858 /* ScaleReport.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7D3F4017334ABD00437858 /* ScaleReport.m */; };
+		CC7D3F4717334BA600437858 /* ScaleReportBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7D3F4617334BA600437858 /* ScaleReportBLL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,11 @@
 		CC3257641730B944005F593C /* SubjectsBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubjectsBLL.m; path = Model/SubjectsBLL.m; sourceTree = "<group>"; };
 		CC3257661730B96E005F593C /* Subjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Subjects.h; path = Model/Subjects.h; sourceTree = "<group>"; };
 		CC3257671730B96F005F593C /* Subjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Subjects.m; path = Model/Subjects.m; sourceTree = "<group>"; };
+		CC7D3F3F17334ABD00437858 /* ScaleReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScaleReport.h; path = Model/ScaleReport.h; sourceTree = "<group>"; };
+		CC7D3F4017334ABD00437858 /* ScaleReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScaleReport.m; path = Model/ScaleReport.m; sourceTree = "<group>"; };
+		CC7D3F4517334BA600437858 /* ScaleReportBLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScaleReportBLL.h; path = Model/ScaleReportBLL.h; sourceTree = "<group>"; };
+		CC7D3F4617334BA600437858 /* ScaleReportBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScaleReportBLL.m; path = Model/ScaleReportBLL.m; sourceTree = "<group>"; };
+		CC7D3F4817334C5C00437858 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +234,7 @@
 				CC325741172ED4E5005F593C /* SQLiteFMDBHelper.h */,
 				CC325742172ED4E5005F593C /* SQLiteFMDBHelper.m */,
 				CC325743172ED4E5005F593C /* SynthesizeSingleton.h */,
+				CC7D3F4817334C5C00437858 /* Constants.h */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -273,6 +281,10 @@
 		CC32575F172FF21A005F593C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC7D3F4517334BA600437858 /* ScaleReportBLL.h */,
+				CC7D3F4617334BA600437858 /* ScaleReportBLL.m */,
+				CC7D3F3F17334ABD00437858 /* ScaleReport.h */,
+				CC7D3F4017334ABD00437858 /* ScaleReport.m */,
 				CC3257631730B943005F593C /* SubjectsBLL.h */,
 				CC3257641730B944005F593C /* SubjectsBLL.m */,
 				CC3257661730B96E005F593C /* Subjects.h */,
@@ -405,6 +417,8 @@
 				CC32575C172FBA35005F593C /* SMHC_ViewController.m in Sources */,
 				CC3257651730B944005F593C /* SubjectsBLL.m in Sources */,
 				CC3257681730B96F005F593C /* Subjects.m in Sources */,
+				CC7D3F4117334ABD00437858 /* ScaleReport.m in Sources */,
+				CC7D3F4717334BA600437858 /* ScaleReportBLL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

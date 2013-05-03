@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+/* 受试者对象 */
 @interface Subjects : NSObject
 
 @property(nonatomic) NSUInteger SubjectID;
+@property(nonatomic, strong)NSString *CodeID; //研究编号
 @property(nonatomic, strong) NSString *Name; //受访者姓名
 @property(nonatomic, strong) NSString *NameAbbr; //受访者姓名缩写
 @property(nonatomic, strong) NSString *SituationType; //现况类型
@@ -21,6 +23,7 @@
 @property(nonatomic) NSUInteger EduMonths; //受教育月数
 @property(nonatomic, strong) NSMutableDictionary *BasicProfile; //基本资料信息
 @property(nonatomic, strong) NSMutableDictionary *ExtendProfile; //扩展资料信息
+@property(nonatomic, strong) NSDate *DateCreated; //创建日期
 
 
 @end

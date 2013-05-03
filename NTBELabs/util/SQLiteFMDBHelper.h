@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FMDatabase.h"
+#import "FMDatabaseQueue.h"
+#import "FMResultSet.h"
 
-@class FMDatabase;
-@class FMDatabaseQueue;
-@class FMResultSet;
+//@class FMDatabase;
+//@class FMDatabaseQueue;
+//@class FMResultSet;
 
 
 @interface SQLiteFMDBHelper : NSObject

@@ -22,4 +22,5 @@
 @synthesize EduMonths;
 @synthesize BasicProfile;
 @synthesize ExtendProfile;
+@synthesize DateCreated;
 @end

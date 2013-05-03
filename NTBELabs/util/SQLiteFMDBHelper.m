@@ -7,8 +7,7 @@
 //
 
 #import "SQLiteFMDBHelper.h"
-#import "FMDatabase.h"
-#import "FMDatabaseQueue.h"
+
 
 //定义默认数据库名及路径
 #define SQLiteDBDefaultName @"Sample.sqlite"
@@ -43,6 +42,7 @@
     self  = [super init];
     if (self)
     {
+        //初始化，默认为当前Bundle
         [self setDBName:SQLiteDBDefaultName WithFilePath:@""];
     }
     
@@ -84,6 +84,8 @@
     //根据文件路径及文件名
     NSString *dbFullPath = [_dbFilePath stringByAppendingPathComponent:fileName];
     
+    //NSLog(@"%@",dbFullPath);
+    
     //检查数据库文件是否存在
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
@@ -101,6 +103,11 @@
 
     
 
+}
+
+- (FMDatabaseQueue *)getBindingQueue
+{
+    return self.bindingQueue;
 }
 
 //当 NSDictionary 的value 是NSArray 类型时  使用 in 语句   where  name in (value1,value2)
@@ -248,18 +255,18 @@ const static NSString *blobtypestring = @"NSDataUIImage";
     return effect;
 }
 
-- (FMResultSet *)ExecuteQuery:(NSString *)cmdSQL
-{
-    __block FMResultSet *_resultSet = nil;
-    
-    [self inDataBase:^(FMDatabase *fmdb){
-
-        
-       _resultSet = [fmdb executeQuery:cmdSQL];
-    }];
-    
-    return _resultSet;
-}
+//- (FMResultSet *)ExecuteQuery:(NSString *)cmdSQL
+//{
+//    __block FMResultSet *_resultSet = nil;
+//    
+//    [self inDataBase:^(FMDatabase *fmdb){
+//
+//        
+//       _resultSet = [fmdb executeQuery:cmdSQL];
+//    }];
+//    
+//    return _resultSet;
+//}
 
  
 

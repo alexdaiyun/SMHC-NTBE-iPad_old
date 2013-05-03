@@ -501,6 +501,19 @@ finish:
     return address;
 }
 
+
++ (NSString *)getDate
+{
+    NSDateFormatter *inputFormatter = [[NSDateFormatter alloc] init];
+    
+    [inputFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    
+    NSString *currentDate =[ inputFormatter stringFromDate:[NSDate date]];
+    
+    return currentDate;
+}
+
+
 //获得指定目录下所有文件名
 + (NSArray *)getFileNamesWithDir:(NSString *)Dir
 {

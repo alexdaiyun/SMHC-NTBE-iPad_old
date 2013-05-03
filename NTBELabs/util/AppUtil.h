@@ -54,6 +54,7 @@ void addRoundedRectToPath(CGContextRef context, CGRect rect, float ovalWidth, fl
 
 + (NSString *)getIPAddress;
 
++ (NSString *)getDate;
 
 
 //获得指定目录下所有文件名

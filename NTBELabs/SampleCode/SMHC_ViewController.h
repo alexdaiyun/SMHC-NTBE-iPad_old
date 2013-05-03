@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SubjectsBLL.h"
 
 @interface SMHC_ViewController : UIViewController
 
