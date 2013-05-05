@@ -7,18 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Constants.h"
+
 
 @interface ScaleReport : NSObject
 
-
-
-
-@property(nonatomic) NSUInteger userID;
-@property(nonatomic) NSUInteger scaleReportID;
+@property(nonatomic) NSUInteger ScaleReportID; //ID
+@property(nonatomic) NSUInteger SubjectID;
 @property(nonatomic) ScaleLevelTag scaleLevleTag; //量表标识符
-@property(nonatomic, strong) NSString *historyDate;
-@property(nonatomic, strong) NSDate *reportDate;
+@property(nonatomic, strong) NSDate *reportDate; //测试创建日期
 @property(nonatomic) NSUInteger score;
 @property(nonatomic, strong) NSString *scaleReportDesc;
 @property(nonatomic) NSUInteger questionCount; //题目数

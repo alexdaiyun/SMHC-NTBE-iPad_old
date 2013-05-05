@@ -36,6 +36,8 @@
 		CC3257681730B96F005F593C /* Subjects.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3257671730B96F005F593C /* Subjects.m */; };
 		CC7D3F4117334ABD00437858 /* ScaleReport.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7D3F4017334ABD00437858 /* ScaleReport.m */; };
 		CC7D3F4717334BA600437858 /* ScaleReportBLL.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7D3F4617334BA600437858 /* ScaleReportBLL.m */; };
+		CCCBC1B917357CEB0084B6B7 /* ScaleLevel in Resources */ = {isa = PBXBuildFile; fileRef = CCCBC1B817357CEB0084B6B7 /* ScaleLevel */; };
+		CCCBC1C1173643490084B6B7 /* libMMMarkdown-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCBC1C0173643490084B6B7 /* libMMMarkdown-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +99,10 @@
 		CC7D3F4017334ABD00437858 /* ScaleReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScaleReport.m; path = Model/ScaleReport.m; sourceTree = "<group>"; };
 		CC7D3F4517334BA600437858 /* ScaleReportBLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScaleReportBLL.h; path = Model/ScaleReportBLL.h; sourceTree = "<group>"; };
 		CC7D3F4617334BA600437858 /* ScaleReportBLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScaleReportBLL.m; path = Model/ScaleReportBLL.m; sourceTree = "<group>"; };
-		CC7D3F4817334C5C00437858 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CC7D3F4917335A7500437858 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CCCBC1B817357CEB0084B6B7 /* ScaleLevel */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ScaleLevel; path = "Supporting Files/ScaleLevel"; sourceTree = "<group>"; };
+		CCCBC1BE173643490084B6B7 /* MMMarkdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMarkdown.h; sourceTree = "<group>"; };
+		CCCBC1C0173643490084B6B7 /* libMMMarkdown-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libMMMarkdown-iOS.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,7 @@
 				CC1E52DF170B43760051FBCE /* UIKit.framework in Frameworks */,
 				CC1E52E1170B43760051FBCE /* Foundation.framework in Frameworks */,
 				CC1E52E3170B43760051FBCE /* CoreGraphics.framework in Frameworks */,
+				CCCBC1C1173643490084B6B7 /* libMMMarkdown-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +182,7 @@
 		CC1E52E5170B43760051FBCE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CCCBC1B817357CEB0084B6B7 /* ScaleLevel */,
 				CC32575D172FE398005F593C /* NTBELabsData.sqlite */,
 				CC32571E172EAE8C005F593C /* images */,
 				CC1E52E6170B43760051FBCE /* NTBELabs-Info.plist */,
@@ -228,13 +235,13 @@
 		CC32573D172ED4E5005F593C /* util */ = {
 			isa = PBXGroup;
 			children = (
+				CC7D3F4917335A7500437858 /* Constants.h */,
 				CC32573E172ED4E5005F593C /* AppUtil.h */,
 				CC32573F172ED4E5005F593C /* AppUtil.m */,
 				CC325740172ED4E5005F593C /* MacroUtils.h */,
 				CC325741172ED4E5005F593C /* SQLiteFMDBHelper.h */,
 				CC325742172ED4E5005F593C /* SQLiteFMDBHelper.m */,
 				CC325743172ED4E5005F593C /* SynthesizeSingleton.h */,
-				CC7D3F4817334C5C00437858 /* Constants.h */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -242,6 +249,7 @@
 		CC325744172ED4E5005F593C /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				CCCBC1BC173643490084B6B7 /* MMMarkdown */,
 				CC325745172ED4E5005F593C /* FMDB */,
 			);
 			path = Vendor;
@@ -291,6 +299,31 @@
 				CC3257671730B96F005F593C /* Subjects.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		CCCBC1BC173643490084B6B7 /* MMMarkdown */ = {
+			isa = PBXGroup;
+			children = (
+				CCCBC1BD173643490084B6B7 /* Headers */,
+				CCCBC1BF173643490084B6B7 /* Libraries */,
+			);
+			path = MMMarkdown;
+			sourceTree = "<group>";
+		};
+		CCCBC1BD173643490084B6B7 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				CCCBC1BE173643490084B6B7 /* MMMarkdown.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		CCCBC1BF173643490084B6B7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CCCBC1C0173643490084B6B7 /* libMMMarkdown-iOS.a */,
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +404,7 @@
 				CC1E52F5170B43760051FBCE /* Default-568h@2x.png in Resources */,
 				CC1E52F8170B43760051FBCE /* MainStoryboard.storyboard in Resources */,
 				CC32575E172FE398005F593C /* NTBELabsData.sqlite in Resources */,
+				CCCBC1B917357CEB0084B6B7 /* ScaleLevel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +567,10 @@
 				GCC_PREFIX_HEADER = "NTBELabs/NTBELabs-Prefix.pch";
 				INFOPLIST_FILE = "NTBELabs/NTBELabs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/NTBELabs/Vendor/MMMarkdown/Libraries\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -545,6 +583,10 @@
 				GCC_PREFIX_HEADER = "NTBELabs/NTBELabs-Prefix.pch";
 				INFOPLIST_FILE = "NTBELabs/NTBELabs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/NTBELabs/Vendor/MMMarkdown/Libraries\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
