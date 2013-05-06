@@ -23,4 +23,9 @@ typedef enum {
     ScaleLevelGDS,  //老年抑郁量表
     ScaleLevelLES,  //生活事件量表
     ScaleLevelSSRS  //社会支持评定量表
-} ScaleLevelTag;
+} ScaleLevelTag; //量表Tag
+
+typedef enum {
+    QTText
+    
+} QuestionType; //题目类型
