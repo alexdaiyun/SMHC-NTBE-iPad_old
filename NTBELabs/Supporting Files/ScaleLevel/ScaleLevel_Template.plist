@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>LevelTitle</key>
+		<string>简明精神状态检查（MMSE)</string>
+	</dict>
+	<dict>
+		<key>QID</key>
+		<string>M1</string>
+		<key>QuestionSection</key>
+		<string>年份</string>
+		<key>QuestionTitle</key>
+		<string>现在是哪一年？</string>
+		<key>QuestionDesc</key>
+		<string></string>
+		<key>QuestionHelpUrl</key>
+		<string>help_M1.html</string>
+		<key>QuestionType</key>
+		<string></string>
+		<key>QuestionAnswer</key>
+		<string></string>
+		<key>QuestionSteps</key>
+		<array/>
+		<key>QuestionImageUrl</key>
+		<string></string>
+		<key>QuestionCounter</key>
+		<true/>
+		<key>QuestionCounterLimit</key>
+		<integer>10</integer>
+		<key>QuestionRank</key>
+		<integer>1</integer>
+		<key>GradingPolicy</key>
+		<string></string>
+	</dict>
+</array>
+</plist>
