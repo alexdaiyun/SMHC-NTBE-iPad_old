@@ -21,6 +21,58 @@
 
 
 
+#pragma mark - sample 2
+
+- (void)t3
+{
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"Level_QMMSE" ofType:@"plist" inDirectory:@"Level_Q/Level_QMMSE"];
+
+    NSString *path = [[NSBundle mainBundle] pathForResource:ScaleLevel_ConfigFile ofType:nil inDirectory:ScaleLevel_FilePath ];
+    
+    SLog(@"%@",path);
+    
+    
+    //NSMutableDictionary *dataDic = [NSMutableDictionary dictionaryWithContentsOfFile:path];
+    
+    //SLog(@"count %d" ,[dataDic count]);
+    
+    NSArray *_configData_Scale = [NSArray arrayWithContentsOfFile:path];
+    SLog(@"count %d", [_configData_Scale count]);
+    
+    NSMutableArray *configData_Scale = [NSMutableArray arrayWithCapacity:(_configData_Scale != nil?_configData_Scale.count:0)];
+    
+    for (NSMutableDictionary *GroupItem in _configData_Scale)
+    {
+        //[configData_Scale addObject:_item];
+        
+        NSString *_groupTitle = [GroupItem objectForKey:@"GroupTitle"];
+        SLog(@"_groupTitle %@", _groupTitle);
+        
+        NSMutableArray *GroupScale = [NSMutableArray arrayWithArray:[GroupItem objectForKey:@"GroupScale"]];
+        
+        SLog(@"GroupScale count %d", [GroupScale count]);
+        
+        for (NSMutableDictionary *ScaleItem in GroupScale)
+        {
+            [configData_Scale addObject:ScaleItem];
+            
+            SLog(@" %@  %@  %@", [ScaleItem objectForKey:@"ScaleTitle"], [ScaleItem objectForKey:@"ScaleFile"], [ScaleItem objectForKey:@"FilePath"]);
+        }
+        
+        
+        
+    }
+        
+    
+    
+    
+    
+//    NSArray *levelTests = (path !=nil?[NSArray arrayWithContentsOfFile:path]:nil);
+//    
+    
+}
+
+
 #pragma mark - sample
 
 - (void)t1
@@ -119,7 +171,10 @@
 //    [self getDataByID];
     
     
-    [self displayMarkdownText];
+//    [self displayMarkdownText];
+    
+    
+    [self t3];
 }
 
 - (void)didReceiveMemoryWarning

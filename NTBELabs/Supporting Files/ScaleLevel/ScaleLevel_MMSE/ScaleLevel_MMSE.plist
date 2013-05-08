@@ -1,11 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array>
-	<dict>
-		<key>LevelTitle</key>
-		<string>简明精神状态检查（MMSE)</string>
-	</dict>
+<dict>
+	<key>ScaleTitle</key>
+	<string>简明精神状态检查（MMSE)</string>
+	<key>ItemCount</key>
+	<integer>30</integer>
+	<key>HelpPath</key>
+	<string>help</string>
+	<key>ImagePath</key>
+	<string>images</string>
+	<key>Questions</key>
+	<array>
+		<dict>
+			<key>QID</key>
+			<string>M1</string>
+			<key>QuestionSection</key>
+			<string>年份</string>
+			<key>QuestionTitle</key>
+			<string>现在是哪一年？</string>
+			<key>QuestionDesc</key>
+			<string></string>
+			<key>QuestionHelpUrl</key>
+			<string>help_M1.html</string>
+			<key>QuestionType</key>
+			<string></string>
+			<key>QuestionAnswer</key>
+			<string></string>
+			<key>QuestionScore</key>
+			<integer>0</integer>
+			<key>QuestionImageUrl</key>
+			<string></string>
+			<key>QuestionTimerCounter</key>
+			<true/>
+			<key>QuestionTimerLimit</key>
+			<integer>10</integer>
+			<key>QuestionRank</key>
+			<integer>1</integer>
+			<key>GradingPolicy</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>QID</key>
+			<string>M2</string>
+			<key>QuestionSection</key>
+			<string>季节</string>
+			<key>QuestionTitle</key>
+			<string>现在是什么季节？</string>
+			<key>QuestionDesc</key>
+			<string></string>
+			<key>QuestionHelpUrl</key>
+			<string>help_M2.html</string>
+			<key>QuestionType</key>
+			<string></string>
+			<key>QuestionAnswer</key>
+			<string></string>
+			<key>QuestionScore</key>
+			<integer>0</integer>
+			<key>QuestionImageUrl</key>
+			<string></string>
+			<key>QuestionTimerCounter</key>
+			<true/>
+			<key>QuestionTimerLimit</key>
+			<integer>10</integer>
+			<key>QuestionRank</key>
+			<integer>1</integer>
+			<key>GradingPolicy</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>New item - 2</key>
 	<dict>
 		<key>QID</key>
 		<string>M1</string>
@@ -34,6 +98,38 @@
 		<key>GradingPolicy</key>
 		<string></string>
 	</dict>
+	<key>New item - 3</key>
+	<dict>
+		<key>QID</key>
+		<string>M1</string>
+		<key>QuestionSection</key>
+		<string>年份</string>
+		<key>QuestionTitle</key>
+		<string>现在是哪一年？</string>
+		<key>QuestionDesc</key>
+		<string></string>
+		<key>QuestionHelpUrl</key>
+		<string>help_M1.html</string>
+		<key>QuestionType</key>
+		<string></string>
+		<key>QuestionAnswer</key>
+		<string></string>
+		<key>QuestionScore</key>
+		<integer>0</integer>
+		<key>QuestionSteps</key>
+		<array/>
+		<key>QuestionImageUrl</key>
+		<string></string>
+		<key>QuestionTimerCounter</key>
+		<true/>
+		<key>QuestionTimerLimit</key>
+		<integer>10</integer>
+		<key>QuestionRank</key>
+		<integer>1</integer>
+		<key>GradingPolicy</key>
+		<string></string>
+	</dict>
+	<key>New item - 4</key>
 	<dict>
 		<key>QuestionTitle</key>
 		<string>现在是星期几？几号？几月？什么季节？哪一年？</string>
@@ -50,6 +146,7 @@
 		<key>GradingPolicy</key>
 		<string>当前五项小问题，每答对一项可计一分。</string>
 	</dict>
+	<key>New item - 5</key>
 	<dict>
 		<key>QuestionTitle</key>
 		<string>我们现在在哪里：省？  市？  医院？ 科室?  第几层楼？</string>
@@ -66,6 +163,7 @@
 		<key>GradingPolicy</key>
 		<string>当前五项小问题，每答对一项可计一分。</string>
 	</dict>
+	<key>New item - 6</key>
 	<dict>
 		<key>QuestionTitle</key>
 		<string>现在我要说三样东西的名称，在我讲完后，请您重复一遍。请您记住这三样东西，因为几分钟后要再问您的。 “皮球”、“国旗”、“树木”</string>
@@ -82,6 +180,7 @@
 		<key>GradingPolicy</key>
 		<string>以第一次答案记分，每答对一个可计1分，最多得3分</string>
 	</dict>
+	<key>New item - 7</key>
 	<dict>
 		<key>QuestionTitle</key>
 		<string>请您算一算100减去7，然后从所得数目再减去7，如此一直计算下去，请您将每减一个7后的答案告诉我，直到我说“停止”为止。 （93   86   79   72   65）</string>
@@ -98,6 +197,7 @@
 		<key>GradingPolicy</key>
 		<string>每答对一个得1分，如果前次错了，但下一个答案是对的，也得1分</string>
 	</dict>
+	<key>New item - 8</key>
 	<dict>
 		<key>QuestionTitle</key>
 		<string>现在请您说出刚才我让您记住的那三样东西？“皮球” “ 国旗”  “树木”</string>
@@ -114,6 +214,7 @@
 		<key>GradingPolicy</key>
 		<string>每正确重复一个得1分，最高3分。</string>
 	</dict>
+	<key>New item - 9</key>
 	<dict>
 		<key>QuestionTitle</key>
 		<string>（出示手表）这个东西叫什么？</string>
@@ -130,6 +231,7 @@
 		<key>GradingPolicy</key>
 		<string>每答对一项可计一分。</string>
 	</dict>
+	<key>New item - 10</key>
 	<dict>
 		<key>QuestionTitle</key>
 		<string>（出示钢笔）这个东西叫什么？</string>
@@ -146,6 +248,7 @@
 		<key>GradingPolicy</key>
 		<string>每答对一项可计一分。</string>
 	</dict>
+	<key>New item - 11</key>
 	<dict>
 		<key>QuestionTitle</key>
 		<string>现在我要说一句话，请您跟着我清楚的重复一遍。  “四十四只石狮子”</string>
@@ -162,6 +265,7 @@
 		<key>GradingPolicy</key>
 		<string>只有正确、咬字清楚的才记1分</string>
 	</dict>
+	<key>New item - 12</key>
 	<dict>
 		<key>QuestionTitle</key>
 		<string>我给您一张纸请您按我说的去做，现在开始：“用右手拿着这张纸，用两只手将它对折起来，放在您的大腿上”。</string>
@@ -178,6 +282,7 @@
 		<key>GradingPolicy</key>
 		<string>只有按正确顺序做的动作才算正确，每个正确动作记1分。</string>
 	</dict>
+	<key>New item - 13</key>
 	<dict>
 		<key>QuestionTitle</key>
 		<string>请您念一念这句话，并且按它的意思去做。</string>
@@ -194,6 +299,7 @@
 		<key>GradingPolicy</key>
 		<string>只有他们确实闭上了眼睛才能得分。</string>
 	</dict>
+	<key>New item - 14</key>
 	<dict>
 		<key>QuestionTitle</key>
 		<string>您给我写一句完整的句子。</string>
@@ -210,6 +316,7 @@
 		<key>GradingPolicy</key>
 		<string>符合要求则记1分</string>
 	</dict>
+	<key>New item - 15</key>
 	<dict>
 		<key>QuestionTitle</key>
 		<string>这是一张图，请您在同一张纸上照样画出来。</string>
@@ -226,5 +333,5 @@
 		<key>GradingPolicy</key>
 		<string>符合要求则记1分</string>
 	</dict>
-</array>
+</dict>
 </plist>

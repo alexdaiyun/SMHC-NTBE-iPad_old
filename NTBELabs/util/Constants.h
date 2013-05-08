@@ -10,7 +10,8 @@
 #define NTBELabs_Constants_h
 
 
-
+#define ScaleLevel_FilePath     @"ScaleLevel"
+#define ScaleLevel_ConfigFile   @"Config_ScaleLevel.plist"
 
 
 #endif
