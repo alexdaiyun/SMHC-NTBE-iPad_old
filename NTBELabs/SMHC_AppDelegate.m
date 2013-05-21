@@ -155,14 +155,13 @@
     
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation //NS_AVAILABLE_IOS(6_0);
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation //NS_AVAILABLE_IOS(6_0);
 {
-    if ( UIDeviceOrientationIsLandscape(orientation))
+    if ( UIDeviceOrientationIsLandscape(interfaceOrientation))
     {
         
         return YES;
     }
     return NO;
 }
-
 @end

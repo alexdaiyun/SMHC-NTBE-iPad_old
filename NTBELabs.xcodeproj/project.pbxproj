@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC13F9E5174B1FCB00076944 /* QuickTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = CC13F9E4174B1FCB00076944 /* QuickTimer.m */; };
+		CC13F9E9174B37A400076944 /* TouchPainterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC13F9E8174B37A400076944 /* TouchPainterViewController.m */; };
+		CC13F9F0174B3F8B00076944 /* BrushCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = CC13F9EC174B3F8B00076944 /* BrushCanvas.m */; };
+		CC13F9F1174B3F8B00076944 /* ColorPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC13F9EE174B3F8B00076944 /* ColorPickerController.m */; };
+		CC13F9F2174B3F8B00076944 /* ColorPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC13F9EF174B3F8B00076944 /* ColorPickerController.xib */; };
 		CC1E52DF170B43760051FBCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E52DE170B43760051FBCE /* UIKit.framework */; };
 		CC1E52E1170B43760051FBCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E52E0170B43760051FBCE /* Foundation.framework */; };
 		CC1E52E3170B43760051FBCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E52E2170B43760051FBCE /* CoreGraphics.framework */; };
@@ -51,6 +56,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC13F9E3174B1FCB00076944 /* QuickTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickTimer.h; sourceTree = "<group>"; };
+		CC13F9E4174B1FCB00076944 /* QuickTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickTimer.m; sourceTree = "<group>"; };
+		CC13F9E7174B37A400076944 /* TouchPainterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchPainterViewController.h; sourceTree = "<group>"; };
+		CC13F9E8174B37A400076944 /* TouchPainterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchPainterViewController.m; sourceTree = "<group>"; };
+		CC13F9EB174B3F8B00076944 /* BrushCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrushCanvas.h; sourceTree = "<group>"; };
+		CC13F9EC174B3F8B00076944 /* BrushCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrushCanvas.m; sourceTree = "<group>"; };
+		CC13F9ED174B3F8B00076944 /* ColorPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerController.h; sourceTree = "<group>"; };
+		CC13F9EE174B3F8B00076944 /* ColorPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerController.m; sourceTree = "<group>"; };
+		CC13F9EF174B3F8B00076944 /* ColorPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerController.xib; sourceTree = "<group>"; };
 		CC1E52DB170B43760051FBCE /* NTBELabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTBELabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1E52DE170B43760051FBCE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CC1E52E0170B43760051FBCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,6 +145,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC13F9E2174B1FCB00076944 /* QuickTimer */ = {
+			isa = PBXGroup;
+			children = (
+				CC13F9E3174B1FCB00076944 /* QuickTimer.h */,
+				CC13F9E4174B1FCB00076944 /* QuickTimer.m */,
+			);
+			path = QuickTimer;
+			sourceTree = "<group>";
+		};
+		CC13F9E6174B37A400076944 /* TouchPainter */ = {
+			isa = PBXGroup;
+			children = (
+				CC13F9E7174B37A400076944 /* TouchPainterViewController.h */,
+				CC13F9E8174B37A400076944 /* TouchPainterViewController.m */,
+			);
+			path = TouchPainter;
+			sourceTree = "<group>";
+		};
+		CC13F9EA174B3F8B00076944 /* BrushTool */ = {
+			isa = PBXGroup;
+			children = (
+				CC13F9EB174B3F8B00076944 /* BrushCanvas.h */,
+				CC13F9EC174B3F8B00076944 /* BrushCanvas.m */,
+				CC13F9ED174B3F8B00076944 /* ColorPickerController.h */,
+				CC13F9EE174B3F8B00076944 /* ColorPickerController.m */,
+				CC13F9EF174B3F8B00076944 /* ColorPickerController.xib */,
+			);
+			path = BrushTool;
+			sourceTree = "<group>";
+		};
 		CC1E52D2170B43760051FBCE = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +279,8 @@
 		CC32573D172ED4E5005F593C /* util */ = {
 			isa = PBXGroup;
 			children = (
+				CC13F9EA174B3F8B00076944 /* BrushTool */,
+				CC13F9E2174B1FCB00076944 /* QuickTimer */,
 				CC7D3F4917335A7500437858 /* Constants.h */,
 				CC32573E172ED4E5005F593C /* AppUtil.h */,
 				CC32573F172ED4E5005F593C /* AppUtil.m */,
@@ -275,6 +321,7 @@
 		CC325750172ED4E5005F593C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CC13F9E6174B37A400076944 /* TouchPainter */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -405,6 +452,7 @@
 				CC1E52F8170B43760051FBCE /* MainStoryboard.storyboard in Resources */,
 				CC32575E172FE398005F593C /* NTBELabsData.sqlite in Resources */,
 				CCCBC1B917357CEB0084B6B7 /* ScaleLevel in Resources */,
+				CC13F9F2174B3F8B00076944 /* ColorPickerController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +501,10 @@
 				CC3257681730B96F005F593C /* Subjects.m in Sources */,
 				CC7D3F4117334ABD00437858 /* ScaleReport.m in Sources */,
 				CC7D3F4717334BA600437858 /* ScaleReportBLL.m in Sources */,
+				CC13F9E5174B1FCB00076944 /* QuickTimer.m in Sources */,
+				CC13F9E9174B37A400076944 /* TouchPainterViewController.m in Sources */,
+				CC13F9F0174B3F8B00076944 /* BrushCanvas.m in Sources */,
+				CC13F9F1174B3F8B00076944 /* ColorPickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
