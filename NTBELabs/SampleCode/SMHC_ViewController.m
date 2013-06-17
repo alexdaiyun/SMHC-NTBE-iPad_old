@@ -57,6 +57,18 @@
             [configData_Scale addObject:ScaleItem];
             
             SLog(@" %@  %@  %@", [ScaleItem objectForKey:@"ScaleTitle"], [ScaleItem objectForKey:@"ScaleFile"], [ScaleItem objectForKey:@"FilePath"]);
+            NSString *itemDirectory =  [NSString stringWithFormat:@"%@/%@",ScaleLevel_FilePath, [ScaleItem objectForKey:@"FilePath"] ];
+            SLog(@"%@",itemDirectory);
+            NSString *itemFile = [NSString stringWithFormat:@"%@", [ScaleItem objectForKey:@"ScaleFile"]];
+            SLog(@"%@",itemFile);
+            
+            NSString *itemPath = [[NSBundle mainBundle] pathForResource:itemFile ofType:nil inDirectory:itemDirectory];
+         
+            if (itemPath != NULL)
+            {
+                SLog(@"%@",itemPath);
+                
+            }
         }
         
         
@@ -156,6 +168,13 @@
     
     _textView_RichText.Text = htmlString;
     [_webView_RichText loadHTMLString:htmlString baseURL:nil];
+}
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    //
 }
 
 #pragma mark - View lifecyle

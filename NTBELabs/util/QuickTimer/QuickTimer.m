@@ -10,10 +10,16 @@
 
 @interface QuickTimer()
 
-@property (nonatomic,strong) dispatch_queue_t queue ;
-@property (nonatomic, readwrite, strong) dispatch_block_t block;
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 60000
+// iOS 6.0 or later
+@property (nonatomic, strong) dispatch_queue_t queue;
 @property (nonatomic, readwrite, strong) dispatch_source_t source;
+#else
+@property (nonatomic) dispatch_queue_t queue;
+@property (nonatomic, readwrite) dispatch_source_t source;
+#endif
 
+@property (nonatomic, strong) dispatch_block_t block;
  
 @end
 

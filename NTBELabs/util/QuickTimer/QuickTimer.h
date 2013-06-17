@@ -31,6 +31,7 @@ typedef enum {
 @property (nonatomic, readwrite) NSTimeInterval timeInterval;
 
 
+
 + (QuickTimer *)createTimerWithTimerInterval:(NSTimeInterval)seconds block:(dispatch_block_t)block;
 
 

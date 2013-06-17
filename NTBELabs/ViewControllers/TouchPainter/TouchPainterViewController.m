@@ -60,15 +60,22 @@
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+#pragma mark - SupportedOrientations
+
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
 {
-	return YES;
+    return UIInterfaceOrientationMaskLandscape;
+    
 }
 
-- (void)didReceiveMemoryWarning
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation //NS_AVAILABLE_IOS(6_0);
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if ( UIDeviceOrientationIsLandscape(interfaceOrientation))
+    {
+        
+        return YES;
+    }
+    return NO;
 }
 
 @end

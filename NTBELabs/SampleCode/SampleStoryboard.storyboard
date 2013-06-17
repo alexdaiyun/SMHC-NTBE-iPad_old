@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="We1-nn-h7O">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="AMd-5S-phW">
+            <objects>
+                <viewController id="We1-nn-h7O" customClass="SMHC_ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="goZ-xR-NGT">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nug-oP-7sw">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="MKi-e3-hRZ"/>
+                                    <constraint firstAttribute="width" constant="455" id="rIM-ue-WSh"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQ7-Rv-d2f">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="iWk-wJ-SHc"/>
+                                    <constraint firstAttribute="width" constant="444" id="vOI-2B-gBI"/>
+                                </constraints>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9k-xh-MXE">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kJQ-9S-AhR" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="T3l-QY-7Ss"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Nug-oP-7sw" secondAttribute="bottom" constant="145" id="MNZ-70-T1H"/>
+                            <constraint firstItem="AQ7-Rv-d2f" firstAttribute="top" secondItem="goZ-xR-NGT" secondAttribute="top" constant="111" id="Nba-4C-KK7"/>
+                            <constraint firstItem="Nug-oP-7sw" firstAttribute="trailing" secondItem="AQ7-Rv-d2f" secondAttribute="trailing" type="default" id="VpA-DZ-myp"/>
+                            <constraint firstItem="a9k-xh-MXE" firstAttribute="leading" secondItem="goZ-xR-NGT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="gnX-td-yen"/>
+                            <constraint firstItem="Nug-oP-7sw" firstAttribute="centerX" secondItem="goZ-xR-NGT" secondAttribute="centerX" type="default" id="j0r-h1-ovb"/>
+                            <constraint firstItem="a9k-xh-MXE" firstAttribute="top" secondItem="goZ-xR-NGT" secondAttribute="top" constant="20" symbolic="YES" type="default" id="zFh-x1-UAJ"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="textView_RichText" destination="Nug-oP-7sw" id="suC-2S-JXe"/>
+                        <outlet property="webView_RichText" destination="AQ7-Rv-d2f" id="aVO-UQ-aEy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pB3-VR-gGN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1622" y="-1229"/>
+        </scene>
+        <!--Touch Painter View Controller-->
+        <scene sceneID="YZO-7V-NR7">
+            <objects>
+                <viewController id="kJQ-9S-AhR" customClass="TouchPainterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BtH-oH-Tlr" customClass="BrushCanvas">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="7Sh-ch-5tW">
+                                <items>
+                                    <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="X87-LN-kC3"/>
+                                    <barButtonItem title="画笔粗细" width="84" style="plain" id="A8c-tJ-dLl"/>
+                                    <barButtonItem style="plain" id="DDo-XN-E8E">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="50" id="Ptd-Fx-v8d" userLabel="Horizontal Slider - Set Stroke Size">
+                                            <rect key="frame" x="136" y="11" width="279" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration" hint="Set Stroke Size" label="Set Stroke Size"/>
+                                            <connections>
+                                                <action selector="setBrushSize:" destination="BtH-oH-Tlr" eventType="valueChanged" id="Mi2-Qg-IqY"/>
+                                            </connections>
+                                        </slider>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="jiI-rG-YZp">
+                                        <button key="customView" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Jw-m4-ykM" userLabel="Button - Set Stroke Color">
+                                            <rect key="frame" x="425" y="7" width="63" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <accessibility key="accessibilityConfiguration" hint="Set Stroke Color" label="Set Stroke Color"/>
+                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                            <state key="normal">
+                                                <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didClickColorButton" destination="BtH-oH-Tlr" eventType="touchUpInside" id="IAZ-GL-RGP"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="add" id="n6q-U3-pd7">
+                                        <connections>
+                                            <action selector="didClickChoosePhoto" destination="BtH-oH-Tlr" id="KOo-X1-Lu6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="Brush_Eraser.png" id="F4x-kJ-isx" userLabel="Bar Button Item - Erase"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="qK7-sr-b58"/>
+                                    <barButtonItem image="Brush_Undo.png" id="Wab-KL-eYG" userLabel="Bar Button Item - Undo">
+                                        <connections>
+                                            <action selector="undo" destination="BtH-oH-Tlr" id="cmn-Dp-SvZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="Brush_Redo.png" id="IYD-AL-Fa7" userLabel="Bar Button Item - Redo">
+                                        <connections>
+                                            <action selector="redo" destination="BtH-oH-Tlr" id="upb-Ur-oma"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="trash" id="mWy-XR-Oth">
+                                        <connections>
+                                            <action selector="eraser" destination="BtH-oH-Tlr" id="WhX-ns-iwF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="保存" id="9Dz-jn-w8t">
+                                        <connections>
+                                            <action selector="savePic" destination="BtH-oH-Tlr" id="s1P-sc-Ups"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="完成" id="OG0-It-0QT">
+                                        <connections>
+                                            <action selector="CloseTouchPainterView" destination="BtH-oH-Tlr" id="wY7-yE-HDq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Sh-ch-5tW" firstAttribute="trailing" secondItem="BtH-oH-Tlr" secondAttribute="trailing" type="default" id="04D-M5-6dD"/>
+                            <constraint firstItem="7Sh-ch-5tW" firstAttribute="leading" secondItem="BtH-oH-Tlr" secondAttribute="leading" type="default" id="L2c-mC-LYW"/>
+                            <constraint firstItem="7Sh-ch-5tW" firstAttribute="bottom" secondItem="BtH-oH-Tlr" secondAttribute="bottom" type="default" id="tEm-h3-42s"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <connections>
+                            <outlet property="buttonColor" destination="8Jw-m4-ykM" id="UHu-05-bmQ"/>
+                            <outlet property="sliderSize" destination="Ptd-Fx-v8d" id="Q80-fF-lAh"/>
+                        </connections>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBF-Pf-qFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-460" y="-576"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Brush_Eraser.png" width="20" height="20"/>
+        <image name="Brush_Redo.png" width="20" height="20"/>
+        <image name="Brush_Undo.png" width="20" height="20"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

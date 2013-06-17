@@ -4,7 +4,7 @@ ScaleLevel_xxxx.plist
 
 item0    
 ScaleTitle        量表标题
-ItemCount    量表题目数
+ItemCount         量表题目数
 HelpPath          题目帮助文件路径
 ImagePath         图片文件路径
 
