@@ -12,6 +12,13 @@
 		CC13F9F0174B3F8B00076944 /* BrushCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = CC13F9EC174B3F8B00076944 /* BrushCanvas.m */; };
 		CC13F9F1174B3F8B00076944 /* ColorPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC13F9EE174B3F8B00076944 /* ColorPickerController.m */; };
 		CC13F9F2174B3F8B00076944 /* ColorPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC13F9EF174B3F8B00076944 /* ColorPickerController.xib */; };
+		CC13F9F4174B459D00076944 /* SampleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC13F9F3174B459D00076944 /* SampleStoryboard.storyboard */; };
+		CC13F9F8174B499F00076944 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = CC13F9F7174B499F00076944 /* UIColor-Expanded.m */; };
+		CC13F9FA174B63B200076944 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC13F9F9174B63B200076944 /* QuartzCore.framework */; };
+		CC13F9FF174B74A300076944 /* Brush_colorWheel.png in Resources */ = {isa = PBXBuildFile; fileRef = CC13F9FB174B74A300076944 /* Brush_colorWheel.png */; };
+		CC13FA00174B74A300076944 /* Brush_Eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = CC13F9FC174B74A300076944 /* Brush_Eraser.png */; };
+		CC13FA01174B74A300076944 /* Brush_Redo.png in Resources */ = {isa = PBXBuildFile; fileRef = CC13F9FD174B74A300076944 /* Brush_Redo.png */; };
+		CC13FA02174B74A300076944 /* Brush_Undo.png in Resources */ = {isa = PBXBuildFile; fileRef = CC13F9FE174B74A300076944 /* Brush_Undo.png */; };
 		CC1E52DF170B43760051FBCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E52DE170B43760051FBCE /* UIKit.framework */; };
 		CC1E52E1170B43760051FBCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E52E0170B43760051FBCE /* Foundation.framework */; };
 		CC1E52E3170B43760051FBCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1E52E2170B43760051FBCE /* CoreGraphics.framework */; };
@@ -65,6 +72,14 @@
 		CC13F9ED174B3F8B00076944 /* ColorPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerController.h; sourceTree = "<group>"; };
 		CC13F9EE174B3F8B00076944 /* ColorPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerController.m; sourceTree = "<group>"; };
 		CC13F9EF174B3F8B00076944 /* ColorPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerController.xib; sourceTree = "<group>"; };
+		CC13F9F3174B459D00076944 /* SampleStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SampleStoryboard.storyboard; sourceTree = "<group>"; };
+		CC13F9F6174B499F00076944 /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
+		CC13F9F7174B499F00076944 /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
+		CC13F9F9174B63B200076944 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CC13F9FB174B74A300076944 /* Brush_colorWheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brush_colorWheel.png; sourceTree = "<group>"; };
+		CC13F9FC174B74A300076944 /* Brush_Eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brush_Eraser.png; sourceTree = "<group>"; };
+		CC13F9FD174B74A300076944 /* Brush_Redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brush_Redo.png; sourceTree = "<group>"; };
+		CC13F9FE174B74A300076944 /* Brush_Undo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brush_Undo.png; sourceTree = "<group>"; };
 		CC1E52DB170B43760051FBCE /* NTBELabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTBELabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1E52DE170B43760051FBCE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CC1E52E0170B43760051FBCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -124,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC13F9FA174B63B200076944 /* QuartzCore.framework in Frameworks */,
 				CC325700172E92E5005F593C /* libsqlite3.dylib in Frameworks */,
 				CC1E52DF170B43760051FBCE /* UIKit.framework in Frameworks */,
 				CC1E52E1170B43760051FBCE /* Foundation.framework in Frameworks */,
@@ -175,6 +191,15 @@
 			path = BrushTool;
 			sourceTree = "<group>";
 		};
+		CC13F9F5174B499F00076944 /* uiColor-utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CC13F9F6174B499F00076944 /* UIColor-Expanded.h */,
+				CC13F9F7174B499F00076944 /* UIColor-Expanded.m */,
+			);
+			path = "uiColor-utilities";
+			sourceTree = "<group>";
+		};
 		CC1E52D2170B43760051FBCE = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +226,7 @@
 				CC1E52DE170B43760051FBCE /* UIKit.framework */,
 				CC1E52E0170B43760051FBCE /* Foundation.framework */,
 				CC1E52E2170B43760051FBCE /* CoreGraphics.framework */,
+				CC13F9F9174B63B200076944 /* QuartzCore.framework */,
 				CC1E5302170B43760051FBCE /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
@@ -262,6 +288,10 @@
 		CC32571E172EAE8C005F593C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CC13F9FB174B74A300076944 /* Brush_colorWheel.png */,
+				CC13F9FC174B74A300076944 /* Brush_Eraser.png */,
+				CC13F9FD174B74A300076944 /* Brush_Redo.png */,
+				CC13F9FE174B74A300076944 /* Brush_Undo.png */,
 			);
 			name = images;
 			path = "Supporting Files/images";
@@ -272,6 +302,7 @@
 			children = (
 				CC32575A172FBA35005F593C /* SMHC_ViewController.h */,
 				CC32575B172FBA35005F593C /* SMHC_ViewController.m */,
+				CC13F9F3174B459D00076944 /* SampleStoryboard.storyboard */,
 			);
 			path = SampleCode;
 			sourceTree = "<group>";
@@ -295,6 +326,7 @@
 		CC325744172ED4E5005F593C /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				CC13F9F5174B499F00076944 /* uiColor-utilities */,
 				CCCBC1BC173643490084B6B7 /* MMMarkdown */,
 				CC325745172ED4E5005F593C /* FMDB */,
 			);
@@ -453,6 +485,11 @@
 				CC32575E172FE398005F593C /* NTBELabsData.sqlite in Resources */,
 				CCCBC1B917357CEB0084B6B7 /* ScaleLevel in Resources */,
 				CC13F9F2174B3F8B00076944 /* ColorPickerController.xib in Resources */,
+				CC13F9F4174B459D00076944 /* SampleStoryboard.storyboard in Resources */,
+				CC13F9FF174B74A300076944 /* Brush_colorWheel.png in Resources */,
+				CC13FA00174B74A300076944 /* Brush_Eraser.png in Resources */,
+				CC13FA01174B74A300076944 /* Brush_Redo.png in Resources */,
+				CC13FA02174B74A300076944 /* Brush_Undo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +542,7 @@
 				CC13F9E9174B37A400076944 /* TouchPainterViewController.m in Sources */,
 				CC13F9F0174B3F8B00076944 /* BrushCanvas.m in Sources */,
 				CC13F9F1174B3F8B00076944 /* ColorPickerController.m in Sources */,
+				CC13F9F8174B499F00076944 /* UIColor-Expanded.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
