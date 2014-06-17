@@ -453,6 +453,11 @@
 				CLASSPREFIX = SMHC_;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = alexday;
+				TargetAttributes = {
+					CC1E52DA170B43760051FBCE = {
+						DevelopmentTeam = F5MGSVX52L;
+					};
+				};
 			};
 			buildConfigurationList = CC1E52D6170B43760051FBCE /* Build configuration list for PBXProject "NTBELabs" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -604,7 +609,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: dai yun (4R843NJ52C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -619,6 +625,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "00734F2A-9982-4FC9-A385-BD205E3E09FA";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -636,7 +643,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: dai yun (4R843NJ52C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -644,6 +652,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "00734F2A-9982-4FC9-A385-BD205E3E09FA";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -653,15 +662,17 @@
 		CC1E5314170B43760051FBCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: dai yun (4R843NJ52C)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NTBELabs/NTBELabs-Prefix.pch";
 				INFOPLIST_FILE = "NTBELabs/NTBELabs-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/NTBELabs/Vendor/MMMarkdown/Libraries\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "00734F2A-9982-4FC9-A385-BD205E3E09FA";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -669,15 +680,17 @@
 		CC1E5315170B43760051FBCE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: dai yun (4R843NJ52C)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NTBELabs/NTBELabs-Prefix.pch";
 				INFOPLIST_FILE = "NTBELabs/NTBELabs-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/NTBELabs/Vendor/MMMarkdown/Libraries\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "00734F2A-9982-4FC9-A385-BD205E3E09FA";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
